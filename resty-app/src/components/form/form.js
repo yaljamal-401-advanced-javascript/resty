@@ -1,7 +1,7 @@
 import React from 'react';
 import './form.scss';
 
-class Main extends React.Component {
+class Form extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -41,13 +41,13 @@ class Main extends React.Component {
                   <main>
                 <div className='first'>
                     <label>URL</label>
-                    <input onChange={this.handleChange}></input>
-                    <button id='goButton' onClick={this.handleClickGo}>GO</button>
+                    <input id='url' onChange={this.handleChange}></input>
+                    <button id='goButton' onClick={this.handleClickGo} id='go'>GO</button>
                     <br></br>
-                    <button className='buttonMethod' onClick={this.handleClickGet} value='GET'>GET</button>
-                    <button className='buttonMethod' onClick={this.handleClickPost} value='POST'>POST</button>
-                    <button className='buttonMethod' onClick={this.handleClickPut} value='PUT'>PUT</button>
-                    <button className='buttonMethod' onClick={this.handleClickDelete} value='DELETE'>DELETE</button>
+                    <button className='buttonMethod' onClick={this.handleClickGet} id='get' value='GET'>GET</button>
+                    <button className='buttonMethod' onClick={this.handleClickPost} id='post' value='POST'>POST</button>
+                    <button className='buttonMethod' onClick={this.handleClickPut} id='put' value='PUT'>PUT</button>
+                    <button className='buttonMethod' onClick={this.handleClickDelete} id='delete' value='DELETE'>DELETE</button>
                 </div>
                 <textarea value={this.state.full}></textarea>
             </main>
@@ -63,4 +63,4 @@ class Main extends React.Component {
 
 
 
-export default Main;
+export default Form;

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> Render 1`] = `
+<body>
+  <main>
+    <div
+      className="first"
+    >
+      <label>
+        URL
+      </label>
+      <input
+        id="url"
+        onChange={[Function]}
+      />
+      <button
+        id="go"
+        onClick={[Function]}
+      >
+        GO
+      </button>
+      <br />
+      <button
+        className="buttonMethod"
+        id="get"
+        onClick={[Function]}
+        value="GET"
+      >
+        GET
+      </button>
+      <button
+        className="buttonMethod"
+        id="post"
+        onClick={[Function]}
+        value="POST"
+      >
+        POST
+      </button>
+      <button
+        className="buttonMethod"
+        id="put"
+        onClick={[Function]}
+        value="PUT"
+      >
+        PUT
+      </button>
+      <button
+        className="buttonMethod"
+        id="delete"
+        onClick={[Function]}
+        value="DELETE"
+      >
+        DELETE
+      </button>
+    </div>
+    <textarea
+      value=""
+    />
+  </main>
+  <footer>
+    <h4>
+      © 2018 Code Fellows 
+    </h4>
+  </footer>
+</body>
+`;
