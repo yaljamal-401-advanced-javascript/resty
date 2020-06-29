@@ -38,25 +38,25 @@ class Form extends React.Component {
     render() {
         return (
             <body>
-                  <main>
-                <div className='first'>
-                    <label>URL</label>
-                    <input id='url' onChange={this.handleChange}></input>
-                    <button id='goButton' onClick={this.handleClickGo} id='go'>GO</button>
-                    <br></br>
-                    <button className='buttonMethod' onClick={this.handleClickGet} id='get' value='GET'>GET</button>
-                    <button className='buttonMethod' onClick={this.handleClickPost} id='post' value='POST'>POST</button>
-                    <button className='buttonMethod' onClick={this.handleClickPut} id='put' value='PUT'>PUT</button>
-                    <button className='buttonMethod' onClick={this.handleClickDelete} id='delete' value='DELETE'>DELETE</button>
-                </div>
-                <textarea value={this.state.full}></textarea>
-            </main>
-            <footer>
-            <h4>&copy; 2018 Code Fellows </h4>
-            </footer>
+                <main>
+                    <div className='first'>
+                        <label>URL</label>
+                        <input id='url' onChange={this.handleChange}></input>
+                        <button id='goButton' onClick={this.handleClickGo} id='go'>GO</button>
+                        <br></br>
+                        <button className='buttonMethod' onClick={this.handleClickGet} id='get' value='GET'>GET</button>
+                        <button className='buttonMethod' onClick={this.handleClickPost} id='post' value='POST'>POST</button>
+                        <button className='buttonMethod' onClick={this.handleClickPut} id='put' value='PUT'>PUT</button>
+                        <button className='buttonMethod' onClick={this.handleClickDelete} id='delete' value='DELETE'>DELETE</button>
+                    </div>
+                    <textarea value={this.state.full}></textarea>
+                </main>
+                <footer>
+                    <h4>&copy; 2018 Code Fellows </h4>
+                </footer>
 
             </body>
-          
+
         );
     }
 }

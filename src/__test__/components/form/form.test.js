@@ -36,7 +36,16 @@ describe('<Form />',()=>{
         urlInput.simulate('change',{target:{value:'google.com'}});
         expect(form.state('URL')).toBe('google.com');
     });
-
+    // it('test go button',()=>{
+    //     const form=mount(<Form/>);
+    //     const go=form.find('#go');
+    //     const input=form.find('#url');
+    //     input.simulate('change',{target:{value:'google.com'}});
+    //     const get=form.find('#get');
+    //     get.simulate('click');
+    //     go.simulate('click');
+    //     expect(form.state('full').toEqual('get google.com'));
+    // });
 
     it('Render',()=>{
         const tree=renderer.create(<Form/>).toJSON();
